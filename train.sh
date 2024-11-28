@@ -1,0 +1,2 @@
+# cd Dynamic-Vision-Transformer
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 main.py /mnt/Datasets/imagenet --model DVT_T2t_vit_12 --batch-size 64 --lr 5e-4 --weight-decay .05 --img-size 224
